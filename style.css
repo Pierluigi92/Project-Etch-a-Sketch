@@ -1,0 +1,13 @@
+#container-grid {
+    display: flex;
+    flex-wrap: wrap;
+    border: solid 3px black;
+    width: 500px;
+    height: 500px;
+}
+
+.quadrati {
+    border: 1px solid black;
+    flex: 0 0 10%;
+    box-sizing: border-box;
+}
