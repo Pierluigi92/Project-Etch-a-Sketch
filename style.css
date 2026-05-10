@@ -21,7 +21,6 @@ body {
 
 .quadrati {
     border: 1px solid grey;
-    flex: 1 1 calc(100% / 16);
     box-sizing: border-box;
     aspect-ratio: 1 / 1;
 }
