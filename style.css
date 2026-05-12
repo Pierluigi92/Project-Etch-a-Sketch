@@ -3,24 +3,32 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    background-color: #f0f0f0;
 }
 
-#button-grid {
-    height: 35px; 
-    width: 155px;
-    border-radius: 10px;
+#container-button {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 20px;
 }
+
+button {
+    border-radius: 10px;
+    height: 40px;
+    width: 110px;
+}
+
 
 #container-grid {
     display: flex;
     flex-wrap: wrap;
-    border: solid 1px grey;
+    border: solid 2px black;
     width: 550px;
-    height: 500px;
+    height: 550px;
+    background-color: white;
 }
 
 .quadrati {
-    border: 1px solid grey;
+    border: 0.1px solid rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
-    aspect-ratio: 1 / 1;
 }
