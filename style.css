@@ -18,11 +18,21 @@ button {
     width: 110px;
 }
 
+.btn-active {
+    background-color: blue;
+    color: white;
+}
+
+.clear:active {
+    background-color: blue;
+    color: white;
+    transform: scale(1);
+}
 
 #container-grid {
     display: flex;
     flex-wrap: wrap;
-    border: solid 2px black;
+    border: solid 1px black;
     width: 550px;
     height: 550px;
     background-color: white;

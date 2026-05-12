@@ -34,7 +34,7 @@ function creaGriglia(lato) {
         });
         containerGrid.appendChild(quadrato);
     }
-};
+}
 
 document.querySelector('.button-grid').addEventListener('click', () => {
     let risposta = prompt("Inserisci numero quadrati per lato, (max 100)", 16); 
@@ -54,6 +54,7 @@ document.querySelector('.colori-casuali').addEventListener('click', () => {
     } else {
         buttonCasuale.innerText = "Random colors: \nOff";
     }
+    gestioneHighLight();
 });
 
 document.querySelector('.eraser').addEventListener('click', () => {
@@ -62,15 +63,28 @@ document.querySelector('.eraser').addEventListener('click', () => {
         modalitàCasuale = false;
         buttonEraser.innerText = "Eraser: \nOn";
         buttonCasuale.innerText = "Random colors: \nOff";
-        
     } else {
         buttonEraser.innerText = "Eraser: \nOff";
     }
+    gestioneHighLight();
 });
 
 document.querySelector('.clear').addEventListener('click', () => {
     creaGriglia(latoCorrente);
 });
+
+function gestioneHighLight() {
+    if ( modalitàCasuale ) {
+        buttonCasuale.classList.add('btn-active');
+    } else {
+        buttonCasuale.classList.remove('btn-active');
+    }
+    if ( modalitàEraser ) {
+        buttonEraser.classList.add('btn-active');
+    } else {
+        buttonEraser.classList.remove('btn-active');
+    }
+}
 
 creaGriglia(16);
 
